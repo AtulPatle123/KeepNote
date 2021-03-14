@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React ,{useState} from 'react';
+import Header from './components/Header';
+import CreateArea from './components/CreateArea';
+import Note from './components/Note';
+import Count from './components/Count';
+function App(props){
+  const [notes,setNotes]=useState([]);
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  function addNote(newNote){
+    setNotes((preValue)=>{
+      return [...preValue,newNote];
+    });
+  }
+
+  function deleteNotes(id){
+    setNotes(preValue=>{
+      return [...preValue.filter((note,index)=>
+        index!==id)];
+    })
+  }
+  return(
+    <>
+      <Header /> 
+      <Count count={notes.length ===0 ?"Empty" : `Show ${notes.length} Notes in Database`}/>
+      <CreateArea onAdd={addNote}/>
+      {notes.map((note,index)=>{
+        return(
+          <Note
+          key={index}
+          id ={index}
+          title={note.title}
+          content={note.content}
+          onDelete={deleteNotes}
+          />
+        );
+      })}
+    </>
   );
 }
 
