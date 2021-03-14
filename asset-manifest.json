@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/KeepNote/static/css/main.1ad3ee6c.chunk.css",
+    "main.js": "/KeepNote/static/js/main.4fdb03a7.chunk.js",
+    "main.js.map": "/KeepNote/static/js/main.4fdb03a7.chunk.js.map",
+    "runtime-main.js": "/KeepNote/static/js/runtime-main.70b63baf.js",
+    "runtime-main.js.map": "/KeepNote/static/js/runtime-main.70b63baf.js.map",
+    "static/js/2.dfd6b8af.chunk.js": "/KeepNote/static/js/2.dfd6b8af.chunk.js",
+    "static/js/2.dfd6b8af.chunk.js.map": "/KeepNote/static/js/2.dfd6b8af.chunk.js.map",
+    "static/js/3.fad12ddb.chunk.js": "/KeepNote/static/js/3.fad12ddb.chunk.js",
+    "static/js/3.fad12ddb.chunk.js.map": "/KeepNote/static/js/3.fad12ddb.chunk.js.map",
+    "index.html": "/KeepNote/index.html",
+    "static/css/main.1ad3ee6c.chunk.css.map": "/KeepNote/static/css/main.1ad3ee6c.chunk.css.map",
+    "static/js/2.dfd6b8af.chunk.js.LICENSE.txt": "/KeepNote/static/js/2.dfd6b8af.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.70b63baf.js",
+    "static/js/2.dfd6b8af.chunk.js",
+    "static/css/main.1ad3ee6c.chunk.css",
+    "static/js/main.4fdb03a7.chunk.js"
+  ]
+}
